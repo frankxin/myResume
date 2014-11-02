@@ -1,0 +1,58 @@
+@import "compass/css3";
+
+
+#content{
+	margin: 30px 50px 30px 50px;
+}
+.myphoto{
+	img{
+		width: 123px;
+		height: 131px;
+		border: 2px solid rgba(0,0,0,0.5);
+		border-radius: 4px;
+	}
+	@include inline-block;
+	position: absolute;
+}
+.my-basic{
+	font-size: 19px;
+	line-height: 25px;
+	position: absolute;
+	left:300px;
+}
+.basic-info{
+	position: relative;
+}
+.tittle{
+	color: #2dbe60;
+	font-size:20px;
+	margin-bottom: 10px;
+}
+.act-in-school{ 
+	position: relative;
+	top: 204px;
+	ul{
+		line-height: 30px;
+	}
+}
+.do-something{
+	position:relative;
+	top:250px;
+	ul{
+		line-height:23px;
+		li{
+			margin-bottom: 10px;
+		}
+	}
+}
+.skill{
+	position:relative;
+	top: 270px;
+	ul{
+		li{
+			position: relative;
+			float: left;
+			margin-left: 50px;
+		}
+	} 
+}

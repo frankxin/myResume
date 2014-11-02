@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myResume</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/Chart.js/Chart.min.js"></script>
+	
+</head>
+<body>
+	<div id="content">
+		<div class="basic-info">
+			<div class="myphoto"><img src="img/myphoto.jpg" alt="myphoto"></div>
+			<div class="my-basic">
+				<p>张兆鑫&nbsp&nbsp&nbsp21</p>
+				<p>学校：电子科技大学</p>
+				<p>专业：信息工程</p>
+				<p>喜欢弹吉他，跑步，写代码</p>
+				<p>tel:18380421239</p>
+				<p>frankxin93@gmail.com</p>
+				<p>github.com/frankxin</p>
+				<p>
+					<span>For</span>
+					<img src="img/evernote.png" height="30px">
+					<span>前端开发实习</span>
+				</p>
+			</div>
+		</div>
+		<div class="act-in-school">
+			<p class="tittle">校内活动</p>
+			<div>
+				<ul>
+					<li>2012-2013&nbsp&nbsp吉他社社长</li>
+					<li>2013至今&nbsp&nbsp syslab互联网实验室成员</li>	
+				</ul>
+			</div>
+		</div>
+		<div class="do-something">
+			<p class="tittle">实践经历</p>
+			<ul>
+				<li>
+					*大一上学期为课程格子做校园推广负责人</br>
+					实习描述：在线上通过贴吧软文，人人，微博进行推广，线下收集用户反馈信息传回课程格子总部.曾经一个月为课程格子增长3000用户.
+				</li>
+				<li>
+					*大一下学期开始接触前端  陕西启政（外包）</br>
+					熟悉了html，css，第一次遇到ie6的兼容问题，比如IE6浮动元素产生双边距bug等，通过触发haslayout，通过css hack的方式解决</br>
+					后来对js，jquery，以及像bootstrap的深入学习后喜欢上了MVC以及模块化的开发模式，喜欢sass+compass的快速更有条理的开发
+				</li>
+				<li>
+					*拼单团(让我成长最快的东西),与学长一起的创业项目 www.pindantuan.cn ， www.pindantuan.cn/wechatweb(一个微信端的小活动)</br>
+					我负责部分产品交互与另一个人合作完成前端，在其中性能优化问题让我印象深刻，通过合并png做sprit减少http请求，尽可能的合并文件，对图片进行异步加载，一定程度上提升了网站的体验</br>写代码时与伙伴发生的代码冲突让我意识到命名空间以及避免全局变量的重要性
+				</li>
+				<li>
+					*平时喜欢胡思乱想，做点小玩意。 sitesbay.sinaapp.com
+				</li>
+				<li>
+					*目前正在学习angular，node和mongoDB
+				</li>
+			</ul>
+		</div>
+		<div class="skill">
+			<p class="tittle">技能图</p>
+			<ul>
+				<li class="no-margin">
+					<canvas id="myChart1" width="110" height="110"></canvas>
+					<span style="position:absolute;left:-4px;top:0px;">HTML</span>
+					<span style="position: absolute;top: 68px;left: -15px;">css</span>
+					<span style="position: absolute;top: 53px;left: 105px;">Js</span>
+				</li>
+				<li>
+					<canvas id="myChart2" width="110" height="110"></canvas>
+					<span style="position:absolute;left: -31px;top:0px;">计算机网络</span>
+					<span style="position: absolute;top: 22px;left: 105px;">数据结构</span>
+					<span style="position: absolute;top: 66px;left: -21px;">算法</span>
+				</li>
+				<li>
+					<canvas id="myChart3" width="110" height="110"></canvas>
+					<span style="position:absolute;left:-12px;top:0px;">法语A2</span>
+					<span style="position:absolute;left:105px;top:32px;">英语cet6</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+	(function() {
+	var ctx2 = $("#myChart2").get(0).getContext("2d");
+	var myDonatChart2 = new Chart(ctx2);
+
+
+	var data = [
+		    {
+		        value: 250,
+		        color:"#F7464A",
+		        highlight: "#FF5A5E",
+		        label: "Red"
+		    },
+		    {
+		        value: 50,
+		        color: "#46BFBD",
+		        highlight: "#5AD3D1",
+		        label: "Green"
+		    },
+		    {
+		        value: 100,
+		        color: "#FDB45C",
+		        highlight: "#FFC870",
+		        label: "Yellow"
+		    }
+	];
+    		
+    
+	var options = {
+
+	};
+	myDonatChart2.Doughnut(data,options);
+})()
+</script>
+<script type="text/javascript">
+	(function() {
+	var ctx3 = $("#myChart3").get(0).getContext("2d");
+	var myDonatChart3 = new Chart(ctx3);
+
+
+	var data = [
+		    {
+		        value: 250,
+		        color:"#F7464A",
+		        highlight: "#FF5A5E",
+		        label: "Red"
+		    },
+		    {
+		        value: 50,
+		        color: "#46BFBD",
+		        highlight: "#5AD3D1",
+		        label: "Green"
+		    }
+	];
+    		
+    
+	var options = {
+
+	};
+	myDonatChart3.Doughnut(data,options);
+})()
+</script>
+</body>
+</html>

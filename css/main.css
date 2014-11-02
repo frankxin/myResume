@@ -1,0 +1,78 @@
+/* line 4, ../sass/main.scss */
+#content {
+  margin: 30px 50px 30px 50px;
+}
+
+/* line 7, ../sass/main.scss */
+.myphoto {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: absolute;
+}
+/* line 8, ../sass/main.scss */
+.myphoto img {
+  width: 123px;
+  height: 131px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+/* line 17, ../sass/main.scss */
+.my-basic {
+  font-size: 19px;
+  line-height: 25px;
+  position: absolute;
+  left: 300px;
+}
+
+/* line 23, ../sass/main.scss */
+.basic-info {
+  position: relative;
+}
+
+/* line 26, ../sass/main.scss */
+.tittle {
+  color: #2dbe60;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 31, ../sass/main.scss */
+.act-in-school {
+  position: relative;
+  top: 204px;
+}
+/* line 34, ../sass/main.scss */
+.act-in-school ul {
+  line-height: 30px;
+}
+
+/* line 38, ../sass/main.scss */
+.do-something {
+  position: relative;
+  top: 250px;
+}
+/* line 41, ../sass/main.scss */
+.do-something ul {
+  line-height: 23px;
+}
+/* line 43, ../sass/main.scss */
+.do-something ul li {
+  margin-bottom: 10px;
+}
+
+/* line 48, ../sass/main.scss */
+.skill {
+  position: relative;
+  top: 270px;
+}
+/* line 52, ../sass/main.scss */
+.skill ul li {
+  position: relative;
+  float: left;
+  margin-left: 50px;
+}

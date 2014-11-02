@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'pinghei';
+  src: url("fonts/PingHei-light.woff") format("woff");
+}
+
+/* line 7, ../sass/global.scss */
+html body {
+  font-family: pinghei;
+}

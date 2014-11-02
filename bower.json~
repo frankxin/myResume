@@ -1,0 +1,19 @@
+{
+	"name": "iResum",
+	"version": "0.0.1",
+	"authors": [
+		"frankxin <frankxin93@gmail.com>"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jquery": "~1.11.1",
+		"Chart.js": "*"
+	}
+}
