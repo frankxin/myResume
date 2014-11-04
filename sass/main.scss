@@ -8,7 +8,7 @@
 	img{
 		width: 123px;
 		height: 131px;
-		border: 2px solid rgba(0,0,0,0.5);
+		border: 2px solid #2dbe60;
 		border-radius: 4px;
 	}
 	@include inline-block;
@@ -37,7 +37,7 @@
 }
 .do-something{
 	position:relative;
-	top:250px;
+	top:220px;
 	ul{
 		line-height:23px;
 		li{
@@ -47,7 +47,7 @@
 }
 .skill{
 	position:relative;
-	top: 270px;
+	top: 242px;
 	ul{
 		li{
 			position: relative;
